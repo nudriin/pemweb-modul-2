@@ -29,11 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body class="font-poppins">
     <section class="flex flex-col items-center justify-center min-h-screen gap-4 bg-slate-900">
-        <?php if (isset($user) && $user > 7) { ?>
+        <?php if (isset($user) && $user >= 7) { ?>
             <script>
                 Swal.fire({
                     title: 'Error!',
-                    text: 'Password maksimal 6 karakter',
+                    text: 'Username maksimal 7 karakter',
                     icon: 'error',
                     confirmButtonText: 'OK',
                     color: '#fff',
